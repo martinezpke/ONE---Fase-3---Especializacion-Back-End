@@ -32,6 +32,35 @@ public class TiposVarible {
 		double variable1 = 50.50;
 		int convertVarible = (int) variable1; // we specify the data type that we want convert
 		System.out.println("\nvariable was convert "+convertVarible);
+		
+		// ---------------------------------------------------------------------------------------------------------------------
+		
+		//integers of types:
+		
+		// variable long type
+		long numeroLargo = 100000000000000L;
+		
+		// Variable short type
+		short numeroPequeno = 10000; // 2 byte
+		
+		// Variable byte type
+		byte numeroMasPequeno = 100; // 8 byte
+		
+		//decimal of types:
+		
+		// Variable of float type
+		float numeroFlotantePequeno = 1.5F;
+		
+		// Variable of double type
+		double numeroFlotanteLargo = 19.00;
+		
+		
+		// ---------------------------------------------------------------------------------------------------------------------
+		
+		
+		
+		
+		
 	}
 }
 
