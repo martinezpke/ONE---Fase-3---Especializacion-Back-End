@@ -13,7 +13,7 @@ public class ReferenciaTets {
 		cuentaDeDiego.agencia = 1;
 		cuentaDeDiego.titular = diego;
 		
-		System.out.println(cuentaDeDiego.titular);
+		System.out.println(cuentaDeDiego.titular.CC);
 		
 	}
 }
