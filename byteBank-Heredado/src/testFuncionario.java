@@ -7,6 +7,6 @@ public class testFuncionario {
 		kevin.setSalario(1000);
 		
 		System.out.println(kevin.getName());
-		System.out.println(kevin.Bonificacion());
+		System.out.println(kevin.getBonificacion());
 	}
 }
