@@ -6,11 +6,16 @@ public class CuentaCorriente extends Cuenta {
 		super(agencia, numero);
 	}
 	
+	// sobre escritura de metodos
 	
-	//indica que este metodo esta sobre escribiendo el metodo de la clase padre
-	
-	@Override 
+	@Override //indica que este metodo esta sobre escribiendo el metodo de la clase padre
 	public boolean saca(double valor) {
 		return super.saca(valor + 0.2);
+	}
+
+	@Override
+	public void depositar(double saldo) {
+		this.saldo += saldo;
+		
 	}
 }
