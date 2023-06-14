@@ -1,5 +1,6 @@
+// abstract indica que una clase es abstracta 
 
-public class Funcionario {
+public abstract class Funcionario {
 	private String name; 
 	private String CC;
 	private double salario;
@@ -28,8 +29,6 @@ public class Funcionario {
 	}
 	
 	
-	public double getBonificacion() {
-		return this.salario*0.1;
-	}
+	public abstract double getBonificacion();
 	
 }
