@@ -9,10 +9,10 @@
 
 
 class Cuenta {
-	double saldo;
-	int agencia;
-	int numero;
-	ClienteClass titular;
+	private double saldo;
+	private int agencia;
+	private int numero;
+	private ClienteClass titular;
 	 
 	public Cuenta(int aganecia, int numero) {
 		this.agencia = aganecia;
@@ -35,12 +35,55 @@ class Cuenta {
 	
 	public boolean trasferir (double valor, Cuenta cuenta) {
 		if (this.saldo >= valor) {
-			this.saldo -= valor;
+			this.saca(valor);
 			cuenta.saldo += valor;
 			return true;
 		}else {
 			return false;
 		}
 		
-	} 
+	}
+	
+	public boolean saca(double valor) {
+		if (this.saldo >= valor) {
+			this.saldo -= valor;
+			return true;
+		}else {
+			return false;
+		}
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public int getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public ClienteClass getTitular() {
+		return titular;
+	}
+
+	public void setTitular(ClienteClass titular) {
+		this.titular = titular;
+	}
+	
+	
 } 
