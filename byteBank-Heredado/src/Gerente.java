@@ -17,6 +17,6 @@ public class Gerente extends Funcionario {
 	    
 	    public double getBonificacion() {
 	    	// super -> hace referencia a la clase padre
-	    	return super.getSalario() + super.getBonificacion();
+	    	return super.getSalario() + this.getSalario()* 0.05;
 	    }
 }
