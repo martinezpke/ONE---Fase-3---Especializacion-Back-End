@@ -1,15 +1,9 @@
- /* Entienda cuenta 
- * 
- * saldo
- * agencia
- * numero
- * titular
- * 
- * */
 
 
-class Cuenta {
-	private double saldo;
+
+public abstract class Cuenta {
+	//protected permite proteger y permitir a la variable acceder a sus clases hijas
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private ClienteClass titular;
@@ -20,9 +14,7 @@ class Cuenta {
 		
 	}
 	
-	public void depositar (double saldo) {
-		this.saldo += saldo;
-	}
+	public abstract void depositar (double saldo);
 	
 	public boolean retirar (double valor) {
 		if (this.saldo >= valor) {
