@@ -700,6 +700,7 @@ not correct please set the HOME environment variable and restart Eclipse. Otherw
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< Updated upstream
 !ENTRY org.eclipse.jdt.core 4 0 2023-06-13 20:09:48.214
 !MESSAGE Failed to update qualified index.
 !STACK 0
@@ -735,6 +736,9 @@ java.io.IOException: Failed to read index data from file:/C:/Projects/eclipse-wo
 Caused by: java.lang.OutOfMemoryError: Java heap space
 
 !ENTRY org.eclipse.jdt.core 4 0 2023-06-13 20:11:51.630
+=======
+!ENTRY org.eclipse.jdt.core 4 0 2023-06-13 20:07:05.279
+>>>>>>> Stashed changes
 !MESSAGE Failed to update qualified index.
 !STACK 0
 java.io.IOException: Failed to read index data from file:/C:/Projects/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 954 and size 1853125231
