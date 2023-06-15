@@ -1,13 +1,13 @@
 
 public class Gerente extends Funcionario {
 	
-	 private int contrasena;
+	 private String contrasena;
 
-	    public void setContraseña(int contrasena) {
+	    public void setContraseña(String contrasena) {
 	        this.contrasena = contrasena;
 	    }
 
-	    public boolean autenticar(int contrasena) {
+	    public boolean autenticar(String contrasena) {
 	        if (this.contrasena == contrasena) {
 	            return true;
 	        } else {
