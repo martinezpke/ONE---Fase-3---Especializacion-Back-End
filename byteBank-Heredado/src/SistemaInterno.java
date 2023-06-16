@@ -3,7 +3,8 @@ public class SistemaInterno {
 	
 	private String clave = "12345";
 	
-	public boolean autenticar(Gerente gerente) {
+	// todo lo que tenga esta esta etiqueta va poder ejecutar este metodo
+	public boolean autenticar(Autenticar gerente) {
 		boolean pIs = gerente.autenticar(this.clave);
 		if(pIs) {
 			System.out.println("Login Exitoso");
