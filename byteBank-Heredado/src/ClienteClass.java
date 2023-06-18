@@ -4,6 +4,7 @@ public class ClienteClass implements Autenticar{
 	String tel;
 	String CC;
 	String genero;
+	private String contrasena;
 	
 	
 	public String getName() {
@@ -30,15 +31,20 @@ public class ClienteClass implements Autenticar{
 	public void setGenero(String genero) {
 		this.genero = genero;
 	}
-	@Override
-	public boolean autenticar(String contrasena) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	
 	@Override
 	public void setContraseña(String contrasena) {
-		// TODO Auto-generated method stub
+		this.contrasena = contrasena;
 		
+	}
+
+	@Override
+	public boolean autenticar(String contrasena) {
+		if (this.contrasena == contrasena) {
+            return true;
+        } else {
+            return false;
+        }
 	}
 	
 	
