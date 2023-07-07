@@ -1,7 +1,8 @@
+package com.bytebank.test;
 
-public class testFuncionario {
-	public static void main(String[] args) {
-		Funcionario kevin = new Contador();
+public class TestGerente {
+	 public static void main(String[] args) {
+		com.bytebank.modelo.Gerente kevin = new com.bytebank.modelo.Gerente();
 		kevin.setName("Kevin");
 		kevin.setCC("1234567890");
 		kevin.setSalario(1000);
